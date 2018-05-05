@@ -1,8 +1,15 @@
 <template>
   <div id="app">
-    <NavBar></NavBar><br>
-    <router-view/>
-    <br>
+    <div id="title-bar">
+      <img src="./assets/error.png" width="15" height="15">
+    </div>
+    <div>
+      <NavBar></NavBar>
+      <br>
+      <br>
+      <router-view/>
+      <br>
+    </div>
   </div>
 </template>
 
@@ -19,5 +26,11 @@ export default {
 </script>
 
 <style>
-
+#title-bar {
+  height: 35px;
+  background-color: #303030;
+  width: 100%;
+  padding-top: 3px;
+  padding-left: 10px;
+}
 </style>

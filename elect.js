@@ -6,7 +6,7 @@ let win = null;
 app.on('ready', function () {
 
   // Initialize the window to our specified dimensions
-  win = new BrowserWindow({width: 1000, height: 700});
+  win = new BrowserWindow({width: 1000, height: 755, frame: false});
 
   // Specify entry point to default entry point of vue.js
   win.loadURL('http://localhost:8080');
@@ -25,7 +25,8 @@ app.on('activate', () => {
 });
 //quit the app once closed
 app.on('window-all-closed', function () {
-  if (process.platform != 'darwin') {
-    app.quit();
-  }
+  // if (process.platform != 'darwin') {
+  //   app.quit();
+  // }
+  app.quit();
 });
